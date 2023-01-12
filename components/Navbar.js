@@ -7,8 +7,8 @@ export default function Navbar() {
   const { user, username } = useContext(UserContext);
 
   return (
-    <nav className="h-20 w-full bg-white fixed top-0 px-10 border-b z-50">
-      <ul className="max-w-7xl mx-auto w-full h-full flex flex-row items-center justify-between gap-4">
+    <nav className="h-20 w-full bg-white fixed top-0 border-b z-50">
+      <ul className="px-10 max-w-7xl mx-auto w-full h-full flex flex-row items-center justify-between gap-4">
         <li>
           <Link href="/">
             <button className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5  dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
