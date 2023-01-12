@@ -12,10 +12,10 @@ export default function EnterPage({}) {
   return (
     <main className="p-10 max-w-7xl w-full mx-auto">
       {user ? (
-        username ? (
-          <SignOutButton />
-        ) : (
+        !username ? (
           <UsernameForm />
+        ) : (
+          <SignOutButton />
         )
       ) : (
         <SignInButton />
